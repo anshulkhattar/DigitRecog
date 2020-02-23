@@ -4,31 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor">
 
     <com.nex3z.fingerpaintview.FingerPaintView
         android:id="@+id/inputBox"
         android:layout_width="369dp"
         android:layout_height="299dp"
         android:layout_gravity="center"
+        android:background="#FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
+        app:layout_constraintVertical_bias="0.194" />
 
     <Button
         android:id="@+id/predictButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
         android:layout_marginStart="162dp"
         android:layout_marginTop="608dp"
         android:layout_marginEnd="162dp"
-        android:text="detect"
-        android:textSize="20dp"
+        android:text="Detect"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:textAllCaps="false"
+        android:background="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +45,7 @@
         android:layout_marginEnd="330dp"
         android:text="INPUT"
         android:textSize="20dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFF"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +62,7 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="330dp"
         android:text="OUTPUT"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFF"
         android:textSize="20dp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,6 +79,8 @@
         android:layout_marginStart="177dp"
         android:layout_marginEnd="176dp"
         android:gravity="center"
+        android:background="#FFFF"
+        android:textColor="#000"
         android:textSize="70dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
